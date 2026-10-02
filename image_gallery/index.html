@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>✨ Image Gallery</h1>
+            <p>📸 Curated collection of visual stories and architectural wonders from around the world</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="filters">
+            <div class="container">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn active" data-category="all">Nature</button>
+                <button class="filter-btn active" data-category="all">City</button>
+                <button class="filter-btn active" data-category="all">Animals</button>
+         
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Nature Images -->
+                    <div class="gallery-item" data-category="nature">
+                        <img src="https://picsum.photos/seed/nature1/400/300.jpg" alt="Nature Scene 1">
+                        <div class="overlay">
+                            <h3>Mountain Landscape</h3>
+                            <p>Breathtaking mountain view</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="nature">
+                        <img src="https://picsum.photos/seed/nature2/400/300.jpg" alt="Nature Scene 2">
+                        <div class="overlay">
+                            <h3>Forest Path</h3>
+                            <p>Serene forest trail</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="nature">
+                        <img src="https://picsum.photos/seed/nature3/400/300.jpg" alt="Nature Scene 3">
+                        <div class="overlay">
+                            <h3>Ocean Sunset</h3>
+                            <p>Beautiful sunset over the ocean</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="nature">
+                        <img src="https://picsum.photos/seed/nature4/400/300.jpg" alt="Nature Scene 4">
+                        <div class="overlay">
+                            <h3>Desert Dunes</h3>
+                            <p>Vast desert landscape</p>
+                        </div>
+                    </div>
+
+                    <!-- City Images -->
+                    <div class="gallery-item" data-category="city">
+                        <img src="https://picsum.photos/seed/city1/400/300.jpg" alt="City Scene 1">
+                        <div class="overlay">
+                            <h3>Urban Skyline</h3>
+                            <p>Modern city architecture</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="city">
+                        <img src="https://picsum.photos/seed/city2/400/300.jpg" alt="City Scene 2">
+                        <div class="overlay">
+                            <h3>Night Lights</h3>
+                            <p>City lights at night</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="city">
+                        <img src="https://picsum.photos/seed/city3/400/300.jpg" alt="City Scene 3">
+                        <div class="overlay">
+                            <h3>Street View</h3>
+                            <p>Bustling city street</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="city">
+                        <img src="https://picsum.photos/seed/city4/400/300.jpg" alt="City Scene 4">
+                        <div class="overlay">
+                            <h3>Bridge Architecture</h3>
+                            <p>Iconic city bridge</p>
+                        </div>
+                    </div>
+
+                    <!-- Animal Images -->
+                    <div class="gallery-item" data-category="animals">
+                        <img src="https://picsum.photos/seed/animal1/400/300.jpg" alt="Animal 1">
+                        <div class="overlay">
+                            <h3>Wildlife</h3>
+                            <p>Majestic wild animal</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="animals">
+                        <img src="https://picsum.photos/seed/animal2/400/300.jpg" alt="Animal 2">
+                        <div class="overlay">
+                            <h3>Birds</h3>
+                            <p>Colorful bird species</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="animals">
+                        <img src="https://picsum.photos/seed/animal3/400/300.jpg" alt="Animal 3">
+                        <div class="overlay">
+                            <h3>Marine Life</h3>
+                            <p>Ocean creature</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="animals">
+                        <img src="https://picsum.photos/seed/animal4/400/300.jpg" alt="Animal 4">
+                        <div class="overlay">
+                            <h3>Pet Portrait</h3>
+                            <p>Adorable companion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightbox-close">&times;</button>
+            <button class="lightbox-prev" id="lightbox-prev">&#10094;</button>
+            <button class="lightbox-next" id="lightbox-next">&#10095;</button>
+            <img src="" alt="" class="lightbox-image" id="lightbox-image">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Tanvi N. Lohkar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
